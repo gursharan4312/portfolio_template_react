@@ -1,0 +1,65 @@
+#aboutme {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 90px;
+  .top-qualities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    .quality {
+      width: 45%;
+      margin: 2em 0;
+      i {
+        font-size: 3em;
+      }
+    }
+  }
+  .about {
+    width: 100%;
+
+    .me {
+      img {
+        width: 60%;
+        margin: 1em;
+      }
+    }
+    .skills {
+      margin: 1em 0;
+      text-align: left;
+      .skill {
+        margin: 0.5em 0;
+        border: 1px solid;
+        padding: 0.5em;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #aboutme {
+    padding-top: 80px;
+    margin-bottom: 2em;
+    .top-qualities {
+      .quality {
+        width: 20%;
+        margin: 4em 0;
+      }
+    }
+    .about {
+      display: flex;
+      direction: row;
+      justify-content: space-evenly;
+      .me {
+        width: 30%;
+      }
+      .skills {
+        width: 60%;
+      }
+    }
+  }
+}

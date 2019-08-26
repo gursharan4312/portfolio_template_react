@@ -3,6 +3,8 @@ nav {
   background: #252934;
   position: sticky;
   top: 0;
+  z-index: 100;
+  box-shadow: 0.5px 0 4px #868686;
   .container-navigation {
     display: flex;
     flex-direction: row;
