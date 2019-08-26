@@ -1,0 +1,52 @@
+.hero-section {
+  width: 100%;
+  height: 90vh;
+  min-height: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background: #252934;
+  color: #fff;
+  .hero-content {
+    h1 {
+      font-size: 2em;
+      span {
+        color: #e31b6d;
+      }
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      border: 2px solid #fff;
+      color: #fff;
+      margin: 2em 1em;
+      &:hover {
+        background: #e31b6d;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    height: calc(100vh - 80px);
+    .hero-content {
+      width: 50%;
+      margin: auto;
+      h1 {
+        font-size: 3em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+    }
+  }
+}
