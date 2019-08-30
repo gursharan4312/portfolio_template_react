@@ -2,11 +2,15 @@ import React from "react";
 import "./HeroSection.scss";
 import Particles from "react-particles-js";
 
-export default function HeroSection() {
+export default function HeroSection(props) {
+  const { theme } = props;
   const particles = {
     particles: {
       number: {
         value: 500
+      },
+      color: {
+        value: theme === "dark" ? "#fff" : "#000"
       },
       line_linked: {
         enable: false
@@ -26,15 +30,37 @@ export default function HeroSection() {
     }
   };
   return (
-    <div className="hero-section">
+    <div
+      className="hero-section"
+      style={{ background: theme === "dark" ? "#252934" : "#fff" }}
+    >
       <Particles width="100%" height="90vh" params={particles} />
-      <div className="hero-content">
+      <div
+        className="hero-content"
+        style={{ color: theme === "dark" ? "#fff" : "#000" }}
+      >
         <h1>
           Hi, I'm <span>Gursharan Singh</span>
         </h1>
         <h2>I'm a full-stact web-developer</h2>
-        <a href="#projects">View Projects</a>
-        <a href="#contact">Contact</a>
+        <a
+          href="#projects"
+          style={{
+            color: theme === "dark" ? "#fff" : "#000",
+            borderColor: theme === "dark" ? "#fff" : "#000"
+          }}
+        >
+          View Projects
+        </a>
+        <a
+          href="#contact"
+          style={{
+            color: theme === "dark" ? "#fff" : "#000",
+            borderColor: theme === "dark" ? "#fff" : "#000"
+          }}
+        >
+          Contact
+        </a>
       </div>
     </div>
   );

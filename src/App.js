@@ -5,14 +5,18 @@ import NavBar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+
 function App() {
+  const [theme, setTheme] = React.useState("light");
   return (
     <div className="container">
-      <NavBar />
-      <HeroSection />
-      <About />
-      <Projects />
-      <Contact />
+      <NavBar theme={theme} setTheme={setTheme} />
+      <HeroSection theme={theme} />
+      <About theme={theme} />
+      <Projects theme={theme} />
+      <Contact theme={theme} />
+      <Footer theme={theme} />
     </div>
   );
 }

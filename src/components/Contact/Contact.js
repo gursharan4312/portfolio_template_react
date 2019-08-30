@@ -1,7 +1,8 @@
 import React from "react";
 import "./Contact.scss";
 
-export default function Contact() {
+export default function Contact(props) {
+  const { theme } = props;
   const [state, setState] = React.useState({
     name: "",
     email: "",
@@ -16,8 +17,20 @@ export default function Contact() {
   const submit = e => {
     e.preventDefault();
   };
+  const inputStyles = {
+    borderColor: theme === "dark" ? "#fff" : "#000",
+    background: theme === "dark" ? "#484f61" : "#eceff1",
+    color: theme === "dark" ? "#fff" : "#000"
+  };
   return (
-    <section className="contact" id="contact">
+    <section
+      className="contact"
+      id="contact"
+      style={{
+        background: theme === "dark" ? "#484f61" : "#eceff1",
+        color: theme === "dark" ? "#fff" : "#000"
+      }}
+    >
       <h1>
         <u>Contact me</u>
       </h1>
@@ -29,6 +42,7 @@ export default function Contact() {
           value={state.name}
           onChange={onChange}
           required
+          style={inputStyles}
         />
         <input
           type="email"
@@ -37,6 +51,7 @@ export default function Contact() {
           value={state.email}
           onChange={onChange}
           required
+          style={inputStyles}
         />
         <textarea
           name="message"
@@ -45,8 +60,17 @@ export default function Contact() {
           placeholder="Your message goes here..."
           rows="5"
           coloumn="10"
+          style={inputStyles}
         />
-        <button onClick={submit}>Submit</button>
+        <button
+          onClick={submit}
+          style={{
+            borderColor: theme === "dark" ? "#fff" : "#000",
+            color: theme === "dark" ? "#fff" : "#000"
+          }}
+        >
+          Submit
+        </button>
       </form>
     </section>
   );

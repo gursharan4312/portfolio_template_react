@@ -1,9 +1,16 @@
 import React from "react";
 import "./About.scss";
 import about from "./about.jpg";
-export default function About() {
+export default function About(props) {
+  const { theme } = props;
   return (
-    <section id="aboutme">
+    <section
+      id="aboutme"
+      style={{
+        background: theme === "dark" ? "#484f61" : "#eceff1",
+        color: theme === "dark" ? "#fff" : "#000"
+      }}
+    >
       <h1>
         <u>About me</u>
       </h1>

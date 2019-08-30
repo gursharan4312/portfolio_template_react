@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   padding: 90px;
+  // background: #eceff1;
   h1 {
     font-size: 2.5em;
   }
@@ -24,6 +25,7 @@
       img {
         width: 60%;
         margin: 1em;
+        box-shadow: 0 0 2px #ddd;
       }
     }
     .skills {
@@ -43,7 +45,6 @@
 @media only screen and (min-width: 768px) {
   #aboutme {
     padding-top: 80px;
-    margin-bottom: 2em;
     .top-qualities {
       .quality {
         width: 20%;
