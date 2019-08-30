@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Navbar.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar(props) {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -47,28 +48,53 @@ export default function Navbar(props) {
           </a>
         </li>
         <li>
-          <a
-            href="#projects"
-            style={{ color: theme === "dark" ? "#fff" : "#000" }}
-          >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a
+          {/* <a
             href="#aboutme"
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
           >
             About me
-          </a>
+          </a> */}
+          <Link
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            style={{ color: theme === "dark" ? "#fff" : "#000" }}
+          >
+            About me
+          </Link>
         </li>
         <li>
-          <a
+          {/* <a
+            href="#projects"
+            style={{ color: theme === "dark" ? "#fff" : "#000" }}
+          >
+            Projects
+          </a> */}
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            style={{ color: theme === "dark" ? "#fff" : "#000" }}
+          >
+            Projects
+          </Link>
+        </li>
+
+        <li>
+          {/* <a
             href="#contact"
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
           >
             Contact
-          </a>
+          </a> */}
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            style={{ color: theme === "dark" ? "#fff" : "#000" }}
+          >
+            Contact
+          </Link>
         </li>
         <li>
           <a

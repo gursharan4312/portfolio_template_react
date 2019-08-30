@@ -31,7 +31,7 @@ nav {
     transition: all 0.4s ease-in-out;
     li {
       display: block;
-
+      margin: 0 0.5em;
       a {
         text-decoration: none;
         display: block;
@@ -41,7 +41,12 @@ nav {
         padding-left: 2em;
         &:hover {
           background: #e31b6d;
-          color: #fff;
+          color: #fff !important;
+          cursor: pointer;
+        }
+        &.active {
+          background: #e31b6d;
+          color: #fff !important;
         }
       }
     }
