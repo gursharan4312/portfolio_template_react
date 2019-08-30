@@ -1,29 +1,33 @@
 .contact {
   text-align: center;
+  height: 80vh;
+  padding-top: 80px;
   h1 {
     font-size: 2.5em;
   }
-  input,
-  textarea {
-    display: block;
-    width: 80%;
-    margin: 1em auto;
-    padding: 0.8em;
-    // border-radius: 5px;
-    border: 1px solid;
-  }
-  button {
-    display: block;
-    width: 80%;
-    height: 40px;
-    line-height: 40px;
-    background: transparent;
-    border: 2px solid #000;
-    // color: #fff;
-    margin: 1em auto;
-    &:hover {
-      background: #e31b6d;
-      color: #fff;
+  form {
+    margin: 3em 0;
+    input,
+    textarea {
+      display: block;
+      width: 80%;
+      margin: 1em auto !important;
+      padding: 0.8em;
+      border: 1px solid;
+    }
+    button {
+      display: block;
+      width: 80%;
+      height: 40px;
+      line-height: 40px;
+      background: transparent;
+      border: 2px solid #000;
+      margin: 1em auto;
+      &:hover {
+        background: #e31b6d;
+        color: #fff;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -33,6 +37,7 @@
     input,
     textarea {
       width: 60%;
+      max-width: 800px;
     }
     button {
       width: 20%;
