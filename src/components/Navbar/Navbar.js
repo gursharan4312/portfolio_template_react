@@ -43,67 +43,57 @@ export default function Navbar(props) {
           <a
             href="#resume"
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
+            className="btn"
           >
             Resume
           </a>
         </li>
         <li>
-          {/* <a
-            href="#aboutme"
-            style={{ color: theme === "dark" ? "#fff" : "#000" }}
-          >
-            About me
-          </a> */}
           <Link
             to="aboutme"
             spy={true}
             smooth={true}
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
+            className="btn"
           >
             About me
           </Link>
         </li>
         <li>
-          {/* <a
-            href="#projects"
-            style={{ color: theme === "dark" ? "#fff" : "#000" }}
-          >
-            Projects
-          </a> */}
           <Link
             to="projects"
             spy={true}
             smooth={true}
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
+            className="btn"
           >
             Projects
           </Link>
         </li>
 
         <li>
-          {/* <a
-            href="#contact"
-            style={{ color: theme === "dark" ? "#fff" : "#000" }}
-          >
-            Contact
-          </a> */}
           <Link
             to="contact"
             spy={true}
             smooth={true}
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
+            className="btn"
           >
             Contact
           </Link>
         </li>
         <li>
-          <a
+          <button
             href="#"
             onClick={changeTheme}
-            style={{ color: theme === "dark" ? "#fff" : "#000" }}
+            style={{
+              color: theme === "dark" ? "#000" : "#fff",
+              background: theme === "dark" ? "#ddd" : "#000"
+            }}
+            className="btn"
           >
             {theme === "dark" ? "Light" : "Dark"} Theme
-          </a>
+          </button>
         </li>
       </ul>
     </nav>

@@ -28,10 +28,10 @@ export default function Projects(props) {
             project little decription about the project little decription about
             the project
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             Github
           </a>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             View Live
           </a>
         </div>
@@ -43,10 +43,10 @@ export default function Projects(props) {
             project little decription about the project little decription about
             the project
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             Github
           </a>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             View Live
           </a>
         </div>
@@ -58,10 +58,10 @@ export default function Projects(props) {
             project little decription about the project little decription about
             the project
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             Github
           </a>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             View Live
           </a>
         </div>
@@ -73,10 +73,10 @@ export default function Projects(props) {
             project little decription about the project little decription about
             the project
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             Github
           </a>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             View Live
           </a>
         </div>
@@ -88,10 +88,10 @@ export default function Projects(props) {
             project little decription about the project little decription about
             the project
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             Github
           </a>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             View Live
           </a>
         </div>
@@ -103,10 +103,10 @@ export default function Projects(props) {
             project little decription about the project little decription about
             the project
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             Github
           </a>
-          <a href="#" style={linkStyle}>
+          <a href="#" style={linkStyle} className="btn">
             View Live
           </a>
         </div>

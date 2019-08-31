@@ -49,6 +49,7 @@ export default function HeroSection(props) {
             color: theme === "dark" ? "#fff" : "#000",
             borderColor: theme === "dark" ? "#fff" : "#000"
           }}
+          className="btn"
         >
           View Projects
         </a>
@@ -58,6 +59,7 @@ export default function HeroSection(props) {
             color: theme === "dark" ? "#fff" : "#000",
             borderColor: theme === "dark" ? "#fff" : "#000"
           }}
+          className="btn"
         >
           Contact
         </a>

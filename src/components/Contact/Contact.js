@@ -68,6 +68,7 @@ export default function Contact(props) {
             borderColor: theme === "dark" ? "#fff" : "#000",
             color: theme === "dark" ? "#fff" : "#000"
           }}
+          className="btn"
         >
           Submit
         </button>

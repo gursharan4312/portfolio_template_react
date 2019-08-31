@@ -33,21 +33,7 @@ nav {
       display: block;
       margin: 0 0.5em;
       a {
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
         padding-left: 2em;
-        &:hover {
-          background: #e31b6d;
-          color: #fff !important;
-          cursor: pointer;
-        }
-        &.active {
-          background: #e31b6d;
-          color: #fff !important;
-        }
       }
     }
   }
@@ -67,12 +53,6 @@ nav {
       display: block !important;
       li {
         display: inline-block;
-        a {
-          display: inline-block;
-          width: 140px;
-          padding: 0;
-          margin: 1em 0;
-        }
       }
     }
   }

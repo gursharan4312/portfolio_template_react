@@ -1,7 +1,7 @@
 import React from "react";
-import "./App.css";
-import HeroSection from "./components/HeroSection/HeroSection";
+import "./App.scss";
 import NavBar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection/HeroSection";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
