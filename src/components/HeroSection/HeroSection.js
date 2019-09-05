@@ -1,26 +1,29 @@
 import React from "react";
 import "./HeroSection.scss";
 import Particles from "react-particles-js";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function HeroSection(props) {
-  const { theme } = props;
+  const { theme, name, description } = props;
   const particles = {
     particles: {
       number: {
-        value: 500
+        value: 150
       },
       color: {
         value: theme === "dark" ? "#fff" : "#000"
       },
       line_linked: {
-        enable: false
+        enable: true,
+        color: theme === "dark" ? "#fff" : "#000",
+        opacity: 0.2
       },
       size: {
-        value: 3,
-        anim: {
-          enable: true,
-          speed: 2
-        }
+        value: 2
+        // anim: {
+        //   enable: true,
+        //   speed: 2
+        // }
       }
     },
     interactivity: {
@@ -40,11 +43,12 @@ export default function HeroSection(props) {
         style={{ color: theme === "dark" ? "#fff" : "#000" }}
       >
         <h1>
-          Hi, I'm <span>Gursharan Singh</span>
+          Hi, I'm <span>{name}</span>
         </h1>
-        <h2>I'm a full-stact web-developer</h2>
-        <a
-          href="#projects"
+        <h2>{description}</h2>
+        <Link
+          to="projects"
+          smooth={true}
           style={{
             color: theme === "dark" ? "#fff" : "#000",
             borderColor: theme === "dark" ? "#fff" : "#000"
@@ -52,9 +56,10 @@ export default function HeroSection(props) {
           className="btn"
         >
           View Projects
-        </a>
-        <a
-          href="#contact"
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
           style={{
             color: theme === "dark" ? "#fff" : "#000",
             borderColor: theme === "dark" ? "#fff" : "#000"
@@ -62,7 +67,7 @@ export default function HeroSection(props) {
           className="btn"
         >
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );

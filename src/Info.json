@@ -1,6 +1,103 @@
 {
-  "Name": "Gursharan Singh",
-  "Email": "gursharan singh",
-  "hero-title": "Hi, I'm Gursharan Singh",
-  "hero-subtitle": "I'm a full-stact wen-developer"
+  "name": "Gursharan Singh",
+  "email": "gursharansingh4312@gmail.com",
+  "description": "I'm a full-stact wen-developer",
+  "aboutme": {
+    "image": "about.jpg",
+    "description": "I'm a passionate full stack web developer and computer science student at Langara college. I want to become a full stack web developer",
+    "qualities": [
+      {
+        "heading": "Freelancing",
+        "icon": "briefcase",
+        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+      },
+      {
+        "heading": "Freelancing",
+        "icon": "briefcase",
+        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+      },
+      {
+        "heading": "Freelancing",
+        "icon": "briefcase",
+        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+      },
+      {
+        "heading": "Freelancing",
+        "icon": "briefcase",
+        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Languages",
+        "values": ["JavaScript", "Java", "PHP"]
+      },
+      {
+        "category": "Framework/Libraries",
+        "values": ["React", "Gatsby", "JQuery"]
+      },
+      {
+        "category": "Back-end",
+        "values": ["NodeJS", "Express"]
+      },
+      {
+        "category": "Database",
+        "values": ["MongoDB", "MYSQL"]
+      },
+      {
+        "category": "Web Dev",
+        "values": ["HTML5", "CSS3", "SASS", "LESS"]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Project 1",
+      "image": "project.jpg",
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "name": "Project 1",
+      "image": "project.jpg",
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "name": "Project 1",
+      "image": "project.jpg",
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "name": "Project 1",
+      "image": "project.jpg",
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "name": "Project 1",
+      "image": "project.jpg",
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "name": "Project 1",
+      "image": "project.jpg",
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
+      "github": "#",
+      "live": "#"
+    }
+  ]
 }

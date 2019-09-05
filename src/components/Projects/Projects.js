@@ -1,8 +1,8 @@
 import React from "react";
-import project from "./project.jpg";
+
 import "./Projects.scss";
 export default function Projects(props) {
-  const { theme } = props;
+  const { theme, projects } = props;
   const linkStyle = {
     color: theme === "dark" ? "#fff" : "#000",
     borderColor: theme === "dark" ? "#fff" : "#ddd"
@@ -20,96 +20,27 @@ export default function Projects(props) {
         <u>Projects</u>
       </h1>
       <div className="projects">
-        <div className="project">
-          <h2>Project 1</h2>
-          <img src={project} />
-          <p>
-            little decription about the project little decription about the
-            project little decription about the project little decription about
-            the project
-          </p>
-          <a href="#" style={linkStyle} className="btn">
-            Github
-          </a>
-          <a href="#" style={linkStyle} className="btn">
-            View Live
-          </a>
-        </div>
-        <div className="project">
-          <h2>Project 1</h2>
-          <img src={project} />
-          <p>
-            little decription about the project little decription about the
-            project little decription about the project little decription about
-            the project
-          </p>
-          <a href="#" style={linkStyle} className="btn">
-            Github
-          </a>
-          <a href="#" style={linkStyle} className="btn">
-            View Live
-          </a>
-        </div>
-        <div className="project">
-          <h2>Project 1</h2>
-          <img src={project} />
-          <p>
-            little decription about the project little decription about the
-            project little decription about the project little decription about
-            the project
-          </p>
-          <a href="#" style={linkStyle} className="btn">
-            Github
-          </a>
-          <a href="#" style={linkStyle} className="btn">
-            View Live
-          </a>
-        </div>
-        <div className="project">
-          <h2>Project 1</h2>
-          <img src={project} />
-          <p>
-            little decription about the project little decription about the
-            project little decription about the project little decription about
-            the project
-          </p>
-          <a href="#" style={linkStyle} className="btn">
-            Github
-          </a>
-          <a href="#" style={linkStyle} className="btn">
-            View Live
-          </a>
-        </div>
-        <div className="project">
-          <h2>Project 1</h2>
-          <img src={project} />
-          <p>
-            little decription about the project little decription about the
-            project little decription about the project little decription about
-            the project
-          </p>
-          <a href="#" style={linkStyle} className="btn">
-            Github
-          </a>
-          <a href="#" style={linkStyle} className="btn">
-            View Live
-          </a>
-        </div>
-        <div className="project">
-          <h2>Project 1</h2>
-          <img src={project} />
-          <p>
-            little decription about the project little decription about the
-            project little decription about the project little decription about
-            the project
-          </p>
-          <a href="#" style={linkStyle} className="btn">
-            Github
-          </a>
-          <a href="#" style={linkStyle} className="btn">
-            View Live
-          </a>
-        </div>
+        {projects.map((project, i) => {
+          return (
+            <div className="project" key={i}>
+              <h2>{project.name}</h2>
+              <img
+                src={`${process.env.PUBLIC_URL}/assests/images/${project.image}`}
+              />
+              <p>{project.description}</p>
+              <p>
+                <strong>Technologies used:</strong>{" "}
+                {project.techUsed.toString()}
+              </p>
+              <a href={project.github} style={linkStyle} className="btn">
+                Github
+              </a>
+              <a href={project.live} style={linkStyle} className="btn">
+                View Live
+              </a>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

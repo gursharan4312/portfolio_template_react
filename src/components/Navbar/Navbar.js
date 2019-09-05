@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar(props) {
   const [showMenu, setShowMenu] = React.useState(false);
-  const { theme, setTheme } = props;
+  const { theme, setTheme, name } = props;
   const toggle = () => {
     setShowMenu(!showMenu);
   };
@@ -30,7 +30,7 @@ export default function Navbar(props) {
           className="logo"
           style={{ color: theme === "dark" ? "#fff" : "#000" }}
         >
-          G.S
+          {name.split(" ").map(name => `${name.charAt(0).toUpperCase()}.`)}
         </a>
         <i
           className="fa fa-bars"
@@ -90,7 +90,8 @@ export default function Navbar(props) {
               color: theme === "dark" ? "#000" : "#fff",
               background: theme === "dark" ? "#ddd" : "#000"
             }}
-            className="btn"
+            // className="btn"
+            id="theme-btn"
           >
             {theme === "dark" ? "Light" : "Dark"} Theme
           </button>
