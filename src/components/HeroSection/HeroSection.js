@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.scss";
 import Particles from "react-particles-js";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function HeroSection(props) {
   const { theme, name, description } = props;
@@ -36,6 +36,7 @@ export default function HeroSection(props) {
     <div
       className="hero-section"
       style={{ background: theme === "dark" ? "#252934" : "#fff" }}
+      id="home"
     >
       <Particles width="100%" height="90vh" params={particles} />
       <div

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Navbar.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Navbar(props) {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -25,13 +25,22 @@ export default function Navbar(props) {
       }}
     >
       <div className="container-navigation">
-        <a
+        {/* <a
           href="#"
           className="logo"
           style={{ color: theme === "dark" ? "#fff" : "#000" }}
         >
           {name.split(" ").map(name => `${name.charAt(0).toUpperCase()}.`)}
-        </a>
+        </a> */}
+        <Link
+          to="home"
+          spy={false}
+          smooth={true}
+          style={{ color: theme === "dark" ? "#fff" : "#000" }}
+          className="logo"
+        >
+          {name.split(" ").map(name => `${name.charAt(0).toUpperCase()}.`)}
+        </Link>
         <i
           className="fa fa-bars"
           onClick={toggle}

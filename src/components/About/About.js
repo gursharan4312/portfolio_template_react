@@ -28,6 +28,7 @@ export default function About(props) {
         <div className="me">
           <img
             src={`${process.env.PUBLIC_URL}/assests/images/${aboutme.image}`}
+            alt="self"
           />
           <p>{aboutme.description}</p>
         </div>

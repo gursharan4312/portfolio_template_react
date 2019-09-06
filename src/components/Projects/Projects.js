@@ -1,5 +1,6 @@
 import React from "react";
 
+import ImageGallery from "./ImageGallery/ImageGallery.js";
 import "./Projects.scss";
 export default function Projects(props) {
   const { theme, projects } = props;
@@ -23,10 +24,11 @@ export default function Projects(props) {
         {projects.map((project, i) => {
           return (
             <div className="project" key={i}>
-              <h2>{project.name}</h2>
-              <img
+              <ImageGallery images={project.images} />
+              {/* <img
                 src={`${process.env.PUBLIC_URL}/assests/images/${project.image}`}
-              />
+              /> */}
+              <h2>{project.name}</h2>
               <p>{project.description}</p>
               <p>
                 <strong>Technologies used:</strong>{" "}
