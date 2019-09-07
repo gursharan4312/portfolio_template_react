@@ -8,15 +8,9 @@ export default function Navbar(props) {
   const toggle = () => {
     setShowMenu(!showMenu);
   };
-  useEffect(() => {
-    if (showMenu) {
-      document.getElementById("navigation-menu").style.display = "block";
-    } else {
-      document.getElementById("navigation-menu").style.display = "none";
-    }
-  });
   const changeTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    toggle();
   };
   return (
     <nav
@@ -25,16 +19,10 @@ export default function Navbar(props) {
       }}
     >
       <div className="container-navigation">
-        {/* <a
-          href="#"
-          className="logo"
-          style={{ color: theme === "dark" ? "#fff" : "#000" }}
-        >
-          {name.split(" ").map(name => `${name.charAt(0).toUpperCase()}.`)}
-        </a> */}
         <Link
           to="home"
           spy={false}
+          offset={-100}
           smooth={true}
           style={{ color: theme === "dark" ? "#fff" : "#000" }}
           className="logo"
@@ -47,7 +35,7 @@ export default function Navbar(props) {
           style={{ color: theme === "dark" ? "#fff" : "#000" }}
         ></i>
       </div>
-      <ul id="navigation-menu">
+      <ul id="navigation-menu" style={{ display: showMenu ? "block" : "none" }}>
         <li>
           <a
             href="#resume"
@@ -60,10 +48,12 @@ export default function Navbar(props) {
         <li>
           <Link
             to="aboutme"
+            // offset={-220}
             spy={true}
             smooth={true}
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
             className="btn"
+            onClick={toggle}
           >
             About me
           </Link>
@@ -72,9 +62,11 @@ export default function Navbar(props) {
           <Link
             to="projects"
             spy={true}
+            // offset={-220}
             smooth={true}
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
             className="btn"
+            onClick={toggle}
           >
             Projects
           </Link>
@@ -87,6 +79,7 @@ export default function Navbar(props) {
             smooth={true}
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
             className="btn"
+            onClick={toggle}
           >
             Contact
           </Link>
@@ -99,7 +92,6 @@ export default function Navbar(props) {
               color: theme === "dark" ? "#000" : "#fff",
               background: theme === "dark" ? "#ddd" : "#000"
             }}
-            // className="btn"
             id="theme-btn"
           >
             {theme === "dark" ? "Light" : "Dark"} Theme

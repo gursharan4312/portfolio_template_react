@@ -5,7 +5,13 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
-
+body {
+  background: #ddd;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .btn {
   text-decoration: none;
   display: block;

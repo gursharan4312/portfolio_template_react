@@ -25,14 +25,23 @@ export default function Projects(props) {
           return (
             <div className="project" key={i}>
               <ImageGallery images={project.images} />
-              {/* <img
-                src={`${process.env.PUBLIC_URL}/assests/images/${project.image}`}
-              /> */}
               <h2>{project.name}</h2>
               <p>{project.description}</p>
               <p>
-                <strong>Technologies used:</strong>{" "}
-                {project.techUsed.toString()}
+                {project.techUsed.map((tech, i) => {
+                  return (
+                    <div
+                      key={i}
+                      className="tech-used"
+                      style={{
+                        background: theme === "dark" ? "#707070" : "#eee",
+                        color: theme === "dark" ? "#fff" : "#000"
+                      }}
+                    >
+                      {tech}
+                    </div>
+                  );
+                })}
               </p>
               <a href={project.github} style={linkStyle} className="btn">
                 Github

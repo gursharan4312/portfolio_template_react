@@ -1,7 +1,7 @@
 #aboutme {
   width: 100%;
   text-align: center;
-  padding: 80px;
+  padding: 80px 40px;
   h1 {
     font-size: 2.5em;
   }
@@ -10,8 +10,9 @@
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+    width: 100%;
     .quality {
-      width: 45%;
+      width: 40%;
       margin: 2em 0;
       i {
         font-size: 3em;
@@ -41,9 +42,18 @@
     }
   }
 }
+@media only screen and (max-width: 360px) {
+  #aboutme {
+    .top-qualities {
+      .quality {
+        width: auto;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 768px) {
   #aboutme {
-    padding-top: 80px;
+    // padding-top: 80px;
     .top-qualities {
       .quality {
         width: 20%;

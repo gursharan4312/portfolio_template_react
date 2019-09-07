@@ -14,8 +14,12 @@ nav {
       display: inline-block;
       margin: 0.8em;
       font-weight: bold;
+      &:hover {
+        cursor: pointer;
+      }
     }
     i {
+      outline: none;
       display: inline-block;
       font-size: 2em;
       color: #000;
@@ -27,8 +31,6 @@ nav {
   }
   ul {
     list-style-type: none;
-    display: none;
-    transition: all 0.4s ease-in-out;
     li {
       display: block;
       margin: 0 0.5em;
