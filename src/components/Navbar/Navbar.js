@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export default function Navbar(props) {
   const [showMenu, setShowMenu] = React.useState(false);
-  const { theme, setTheme, name } = props;
+  const { theme, setTheme, name, resume } = props;
   const toggle = () => {
     setShowMenu(!showMenu);
   };
@@ -38,7 +38,8 @@ export default function Navbar(props) {
       <ul id="navigation-menu" style={{ display: showMenu ? "block" : "none" }}>
         <li>
           <a
-            href="#resume"
+            href={`${process.env.PUBLIC_URL}/assests/resume/${resume}`}
+            target="_blank"
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
             className="btn"
           >
