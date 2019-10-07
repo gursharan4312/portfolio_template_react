@@ -1,6 +1,6 @@
-# Space Xplorer
+# React portfolio Template
 
-React portfolio template
+
 
 [Portfolio](https://gursharansingh.ca/)
 
