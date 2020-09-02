@@ -6,21 +6,23 @@ export default function Contact(props) {
   const [state, setState] = React.useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
-  const onChange = e => {
+  const onChange = (e) => {
     setState({
       ...state,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
-  const submit = e => {
+
+  const submit = (e) => {
     e.preventDefault();
   };
+
   const inputStyles = {
     borderColor: theme === "dark" ? "#fff" : "#000",
     background: theme === "dark" ? "#484f61" : "#eceff1",
-    color: theme === "dark" ? "#fff" : "#000"
+    color: theme === "dark" ? "#fff" : "#000",
   };
   return (
     <section
@@ -28,7 +30,7 @@ export default function Contact(props) {
       id="contact"
       style={{
         background: theme === "dark" ? "#484f61" : "#eceff1",
-        color: theme === "dark" ? "#fff" : "#000"
+        color: theme === "dark" ? "#fff" : "#000",
       }}
     >
       <h1>
@@ -66,7 +68,7 @@ export default function Contact(props) {
           onClick={submit}
           style={{
             borderColor: theme === "dark" ? "#fff" : "#000",
-            color: theme === "dark" ? "#fff" : "#000"
+            color: theme === "dark" ? "#fff" : "#000",
           }}
           className="btn"
         >

@@ -8,30 +8,30 @@
     "description": "I'm a passionate full stack web developer and computer science student at Langara college. I want to become a full stack web developer",
     "qualities": [
       {
-        "heading": "Freelancing",
-        "icon": "briefcase",
-        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+        "heading": "Fast",
+        "icon": "clock",
+        "description": "Fast load times and lag free interaction, my highest priority."
       },
       {
-        "heading": "Freelancing",
-        "icon": "briefcase",
-        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+        "heading": "Responsive",
+        "icon": "mobile",
+        "description": "My layouts will work on any device, big or small."
       },
       {
-        "heading": "Freelancing",
-        "icon": "briefcase",
-        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+        "heading": "Intuitive",
+        "icon": "code",
+        "description": "Strong preference for easy to use, intuitive UX/UI."
       },
       {
-        "heading": "Freelancing",
+        "heading": "Dynamic",
         "icon": "briefcase",
-        "description": "Freelancng about 2 years and yeah it's pretty cool as of now"
+        "description": "Websites don't have to be static, I love making pages come to life.      "
       }
     ],
     "skills": [
       {
         "category": "Languages",
-        "values": ["JavaScript", "Java", "PHP"]
+        "values": ["JavaScript", "C++", "Java"]
       },
       {
         "category": "Framework/Libraries",
@@ -54,22 +54,22 @@
   "projects": [
     {
       "name": "Project 1",
-      "images": ["project.jpg", "about.jpg"],
+      "images": ["project2.jpg", "project.jpg"],
+      "description": "This sis the very first project of mine lalala",
+      "techUsed": ["React", "Express"],
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "name": "Project 2",
+      "images": ["project.jpg", "project2.jpg"],
       "description": "This sis the very first project of mine lalala",
       "techUsed": ["JavScript", "MongoDB", "React", "Express"],
       "github": "#",
       "live": "#"
     },
     {
-      "name": "Project 1",
-      "images": ["project.jpg", "about.jpg"],
-      "description": "This sis the very first project of mine lalala",
-      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
-      "github": "#",
-      "live": "#"
-    },
-    {
-      "name": "Project 1",
+      "name": "Project 3",
       "images": ["project.jpg"],
       "description": "This sis the very first project of mine lalala",
       "techUsed": ["JavScript", "MongoDB", "React", "Express"],
@@ -77,23 +77,7 @@
       "live": "#"
     },
     {
-      "name": "Project 1",
-      "images": ["project.jpg"],
-      "description": "This sis the very first project of mine lalala",
-      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
-      "github": "#",
-      "live": "#"
-    },
-    {
-      "name": "Project 1",
-      "images": ["project.jpg"],
-      "description": "This sis the very first project of mine lalala",
-      "techUsed": ["JavScript", "MongoDB", "React", "Express"],
-      "github": "#",
-      "live": "#"
-    },
-    {
-      "name": "Project 1",
+      "name": "Project 4",
       "images": ["project.jpg"],
       "description": "This sis the very first project of mine lalala",
       "techUsed": ["JavScript", "MongoDB", "React", "Express"],

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Navbar.scss";
 import { Link } from "react-scroll";
 
@@ -15,7 +15,7 @@ export default function Navbar(props) {
   return (
     <nav
       style={{
-        background: theme === "dark" ? "#252934" : "#fff"
+        background: theme === "dark" ? "#252934" : "#fff",
       }}
     >
       <div className="container-navigation">
@@ -27,7 +27,7 @@ export default function Navbar(props) {
           style={{ color: theme === "dark" ? "#fff" : "#000" }}
           className="logo"
         >
-          {name.split(" ").map(name => `${name.charAt(0).toUpperCase()}.`)}
+          {name.split(" ").map((name) => `${name.charAt(0).toUpperCase()}.`)}
         </Link>
         <i
           className="fa fa-bars"
@@ -40,6 +40,7 @@ export default function Navbar(props) {
           <a
             href={`${process.env.PUBLIC_URL}/assests/resume/${resume}`}
             target="_blank"
+            rel="noopener noreferrer"
             style={{ color: theme === "dark" ? "#fff" : "#000" }}
             className="btn"
           >
@@ -91,7 +92,7 @@ export default function Navbar(props) {
             onClick={changeTheme}
             style={{
               color: theme === "dark" ? "#000" : "#fff",
-              background: theme === "dark" ? "#ddd" : "#000"
+              background: theme === "dark" ? "#ddd" : "#000",
             }}
             id="theme-btn"
           >
