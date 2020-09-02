@@ -1,7 +1,5 @@
 # React portfolio Template
 
-
-
 [Portfolio](https://gursharansingh.ca/)
 
 ## Getting Started
@@ -46,12 +44,9 @@ Enjoy :)
 
 ## Built With
 
-* [React](https://reactjs.org/) - The JavaScript framework used
-* [SASS](https://sass-lang.com/) - CSS Pre-Processor
-
-
-
+- [React](https://reactjs.org/) - The JavaScript framework used
+- [SASS](https://sass-lang.com/) - CSS Pre-Processor
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License

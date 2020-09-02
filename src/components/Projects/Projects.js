@@ -6,7 +6,7 @@ export default function Projects(props) {
   const { theme, projects } = props;
   const linkStyle = {
     color: theme === "dark" ? "#fff" : "#000",
-    borderColor: theme === "dark" ? "#fff" : "#ddd"
+    borderColor: theme === "dark" ? "#fff" : "#ddd",
   };
   return (
     <section
@@ -14,7 +14,7 @@ export default function Projects(props) {
       id="projects"
       style={{
         background: theme === "dark" ? "#252934" : "#fff",
-        color: theme === "dark" ? "#fff" : "#000"
+        color: theme === "dark" ? "#fff" : "#000",
       }}
     >
       <h1>
@@ -27,7 +27,7 @@ export default function Projects(props) {
               <ImageGallery images={project.images} />
               <h2>{project.name}</h2>
               <p>{project.description}</p>
-              <p>
+              <div>
                 {project.techUsed.map((tech, i) => {
                   return (
                     <div
@@ -35,14 +35,14 @@ export default function Projects(props) {
                       className="tech-used"
                       style={{
                         background: theme === "dark" ? "#707070" : "#eee",
-                        color: theme === "dark" ? "#fff" : "#000"
+                        color: theme === "dark" ? "#fff" : "#000",
                       }}
                     >
                       {tech}
                     </div>
                   );
                 })}
-              </p>
+              </div>
               <a href={project.github} style={linkStyle} className="btn">
                 Github
               </a>
