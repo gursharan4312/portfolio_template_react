@@ -2,7 +2,7 @@
   "name": "portfolio-template-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://confident-ardinghelli-89856f.netlify.app/",
+  "homepage": "https://portfolio-gursharan.netlify.app/",
   "dependencies": {
     "node-sass": "^4.14.1",
     "particle.js": "^1.0.7",
